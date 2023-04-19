@@ -1,11 +1,11 @@
 
 <?php
-if(isset($_POST['submit'])){
+//if(isset($_POST['submit'])){
 	$to = "muneeba.mujeeb@yahoo.com"; // Your email address
-	$name = $_POST['name'];
-	$from = $_POST['email'];
-	$phone = $_POST['contact'];
-	$message = $_POST['message'];
+	$name = 'name';
+	$from = 'muneeba.mujeeb11@gmail.com';
+	$phone = 'contact';
+	$message = 'message';
 	$subject = "Contact Form Details";
 	$headers = "From:" . $from;
 	$result = mail($to,$subject,$message,$headers);
@@ -18,5 +18,5 @@ if(isset($_POST['submit'])){
 		echo '<script type="text/javascript">alert("Sorry! Message was not sent, Try again Later.");</script>';
 		echo '<script type="text/javascript">window.location.href = window.location.href;</script>';
 	}
-}
+//}
 ?>
